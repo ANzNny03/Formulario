@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	background: url(https://w.wallhaven.cc/full/ym/wallhaven-ym1zx7.png);
+	background-size: contain;
+    color: #fff;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	width: 90%;
+	max-width: 600px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+    padding: 10px 0;
+}
+
+.input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+    background: transparent;
+	border-bottom: 2px solid rgba(121, 239, 255, 0.301);
+    outline: none;
+    transition: border ease .4s;
+}
+
+.input:hover,
+.input:focus,
+.input:not(:placeholder-shown) {
+    border-color: #79efff;
+}
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 18px;
+    color: #79efff;
+    padding: 2px;
+    display: block;
+    transition: all ease .5s;
+    cursor: text;
+}
+
+.input:focus + .placeholder,
+.input:not(:placeholder-shown) + .placeholder{
+    top: -10px;
+    color: #79efff;
+}
+
+.btn {
+    width: 50%;
+	padding: 5px 15px;
+	background: rgba(121, 239, 255, .4);
+	border: none;
+    align-self: end;
+    border-radius: 10px;
+	transition: background ease .5s;
+}
+
+.btn:hover {
+    background: rgba(121, 239, 255, 0.6);
+}
